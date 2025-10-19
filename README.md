@@ -233,7 +233,7 @@ Explore powerful Java features such as **Lambda expressions, Stream API, Multith
 🧠 **Goal:**
 To document and master Java step by step while building a solid foundation for software development.
 
-## 📘 Contents Covered:**
+## 📘 Contents Covered:
 
 * Core Java Syntax
 * OOP Principles
@@ -250,5 +250,3 @@ To document and master Java step by step while building a solid foundation for s
 > “The best way to learn Java is to code it — one topic at a time.” ☕
 
 ---
-
-Gusto mo bang gawing **Taglish** o **all-English** version ito (para mas bagay sa GitHub audience mo)?
