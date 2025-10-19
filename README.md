@@ -9,11 +9,11 @@ Each topic is organized into three levels for easier progression:
 
 ---
 
-# 🟢 BEGINNER LEVEL (1–30)**
+## 🟢 BEGINNER LEVEL (1–30)**
 
 Start with the fundamentals — from installation, syntax, and variables to arrays, loops, and basic exception handling. Perfect for those new to Java programming.
 
-## 📘Topics
+### 📘Topics
 
 - Introduction to Java
 
@@ -77,8 +77,8 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 ---
 
-# 🟡 INTERMEDIATE LEVEL (31–65)**
-## 📘Topics
+## 🟡 INTERMEDIATE LEVEL (31–65)**
+### 📘Topics
 - Object-Oriented Programming (OOP) Concepts
 
 - Classes and Objects
@@ -153,11 +153,11 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 --
 
-# 🔵 ADVANCED LEVEL (66–100)**
+## 🔵 ADVANCED LEVEL (66–100)**
 
 Explore powerful Java features such as **Lambda expressions, Stream API, Multithreading, JDBC, GUI (Swing/JavaFX)**, and design patterns. These topics prepare you for real-world Java applications and coding interviews.
 
-## 📘Topics
+### 📘Topics
 - Lambda Expressions
 
 - Functional Interfaces
@@ -233,7 +233,7 @@ Explore powerful Java features such as **Lambda expressions, Stream API, Multith
 🧠 **Goal:**
 To document and master Java step by step while building a solid foundation for software development.
 
-# 📘 Contents Covered:**
+## 📘 Contents Covered:**
 
 * Core Java Syntax
 * OOP Principles
