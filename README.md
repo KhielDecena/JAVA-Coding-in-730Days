@@ -1,4 +1,4 @@
-# **JAVA-Coding-in-730Days**
+# **JAVA Coding 730Days**
 ---
 # 💻 Java Learning Roadmap (Beginner → Advanced)
 
