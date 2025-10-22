@@ -2,6 +2,8 @@
 
 ## 🧠 **Topic: Introduction to Java**
 
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
 ---
 
 ### 🔹 **1. What Is Java?**
@@ -191,6 +193,8 @@ Java is used in almost **every technology field** you can imagine:
 
 ## ☕ **Java Installation and Setup (JDK, JRE, IDE)**
 
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
 ---
 
 ### 🧩 **1. Key Components**
@@ -268,6 +272,8 @@ Use an **IDE** (Integrated Development Environment) for easier coding:
 ---
 
 ## 🧠 **Topic: Variables and Data Types in Java**
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
 
 ---
 
@@ -445,6 +451,8 @@ int b = (int) a; // 9
 ---
 
 ## 🧠 **Topic: Constants and Literals in Java**
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
 
 ---
 
@@ -633,6 +641,8 @@ Area: 78.54
 ---
 
 ## 🧠 **Topic: Input and Output (Scanner Class)**
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
 
 ---
 
@@ -854,6 +864,8 @@ input.close();
 
 *(Arithmetic, Relational, Logical, Assignment)*
 
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
 ---
 
 ### 🔹 **1. What Are Operators?**
@@ -1059,6 +1071,8 @@ System.out.println(x); // 30
 ---
 
 ## 🧠 **Topic: Type Casting in Java**
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
 
 ---
 
@@ -1320,6 +1334,8 @@ System.out.println(b); // Output: -126
 
 ## 🧠 **Topic: If–Else Statements in Java**
 
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
 ---
 
 ### 🔹 **1. What Are If–Else Statements?**
@@ -1559,6 +1575,8 @@ Odd
 ---
 
 ## 🧠 Nested If–Else
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
 
 ---
 
@@ -2645,10 +2663,1685 @@ public class ContinueExample {
 Use `break` when you’ve already achieved your goal inside a loop.
 Use `continue` when you want to **ignore certain values** but still keep looping.
 
+
 ---
 
+# 🌟 Java Arrays (1D and 2D)
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧩 1. Definition
+
+**Array** – is a **container** that stores multiple values of the **same data type** in a **single variable**.
+Instead of creating many variables, arrays let you **store, access, and manage** data efficiently.
+
+There are two main types:
+
+* **1D (One-Dimensional) Array** – like a list of items.
+* **2D (Two-Dimensional) Array** – like a table or matrix with rows and columns.
+
+---
+
+## 🎯 2. Purpose / Importance
+
+Arrays are important because they:
+
+* Organize data efficiently in memory.
+* Make it easy to use loops for processing multiple values.
+* Are the **foundation** of many data structures (like matrices, lists, and graphs).
+* Improve readability and maintainability of your code.
+
+---
+
+## 🧱 3. Syntax / Structure
+
+### 🔹 1D Array
+
+```java
+// Declaration
+int[] numbers;
+
+// Initialization
+numbers = new int[5];
+
+// Combined declaration and initialization
+int[] numbers = {10, 20, 30, 40, 50};
+```
+
+✅ **Accessing elements:**
+
+```java
+System.out.println(numbers[0]); // Output: 10
+```
+
+✅ **Changing an element:**
+
+```java
+numbers[2] = 99; // Replaces 30 with 99
+```
+
+---
+
+### 🔹 2D Array
+
+A **two-dimensional array** is like a grid (rows and columns).
+
+```java
+// Declaration
+int[][] matrix;
+
+// Initialization
+matrix = new int[3][3]; // 3 rows, 3 columns
+
+// Combined declaration and initialization
+int[][] matrix = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+```
+
+✅ **Accessing elements:**
+
+```java
+System.out.println(matrix[1][2]); // Output: 6 (row 1, column 2)
+```
+
+---
+
+## 💻 4. Example Code with Explanation
+
+### 🧮 Example 1 – 1D Array (Sum of Numbers)
+
+```java
+public class OneDArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        int sum = 0;
+
+        for (int num : numbers) { // Enhanced for loop
+            sum += num;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
+```
+
+🧠 **Explanation:**
+
+* The `for-each` loop reads each element automatically.
+* No need to worry about array indexes.
+* Output: `Sum = 150`
+
+---
+
+### 🧮 Example 2 – 2D Array (Matrix Display)
+
+```java
+public class TwoDArrayExample {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        for (int[] row : matrix) {
+            for (int value : row) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+🧠 **Explanation:**
+
+* Outer loop → goes through each row.
+* Inner loop → prints each element inside the row.
+* Output:
+
+  ```
+  1 2 3
+  4 5 6
+  7 8 9
+  ```
+
+---
+
+## 💡 5. Quick Tips
+
+| Tip                        | Description                                  |
+| -------------------------- | -------------------------------------------- |
+| 🧮 `.length`               | Gets the size of an array (`numbers.length`) |
+| 🧠 `Arrays.toString()`     | Prints 1D arrays easily                      |
+| 🧠 `Arrays.deepToString()` | Prints 2D arrays in table-like format        |
+| ⚙️ Index starts at `0`     | The first element is at position 0           |
+| 🚫 Fixed Size              | Once created, an array cannot grow or shrink |
 
 
+---
+
+# 🎯 **String Basics in Java**
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧩 1. Definition
+
+A **String** in Java is an **object** that represents a **sequence of characters**.
+Unlike primitive data types like `int` or `char`, Strings are part of the Java class library (`java.lang.String`).
+
+```java
+String greeting = "Hello, Java!";
+```
+
+Here, `"Hello, Java!"` is a **string literal**, and `greeting` is a reference to that object.
+
+---
+
+## 💡 2. Purpose / Importance
+
+Strings are among the most commonly used objects in Java.
+They are used to:
+
+* Store and manipulate text (names, messages, data).
+* Display output to users.
+* Process input from files or keyboards.
+* Handle web data, database queries, and file paths.
+
+Strings are **immutable**, which means once created, their contents **cannot be changed**.
+This helps make programs **safer and more reliable** because strings cannot be accidentally modified by other parts of your program.
+
+---
+
+## 🧱 3. Syntax / Structure
+
+### Declaring and Initializing Strings
+
+```java
+String s1 = "Java";
+String s2 = new String("Programming");
+```
+
+> ✅ Most of the time, you’ll use double quotes — it’s simpler and faster.
+
+---
+
+## 🧠 4. Example Code with Explanation
+
+### 🔹 Example 1 – Concatenation (Joining Strings)
+
+```java
+String first = "Hello";
+String second = "World";
+String message = first + " " + second;
+System.out.println(message);
+```
+
+**Output:**
+
+```
+Hello World
+```
+
+📝 `+` is the concatenation operator that combines strings.
+You can also use:
+
+```java
+String joined = String.join(" / ", "S", "M", "L", "XL");
+// Output: S / M / L / XL
+```
+
+---
+
+### 🔹 Example 2 – Strings Are Immutable
+
+```java
+String greeting = "Hello";
+greeting = greeting.substring(0, 3) + "p!";
+System.out.println(greeting);
+```
+
+**Output:**
+
+```
+Help!
+```
+
+✳️ Instead of changing the original string, Java **creates a new one** in memory.
+
+---
+
+### 🔹 Example 3 – Comparing Strings
+
+```java
+String a = "Hello";
+String b = "hello";
+
+System.out.println(a.equals(b));            // false
+System.out.println(a.equalsIgnoreCase(b));  // true
+```
+
+> ⚠️ Don’t use `==` to compare strings.
+> It checks if both variables point to the **same memory**, not if their **text** is equal.
+
+---
+
+### 🔹 Example 4 – Empty and Null Strings
+
+```java
+String empty = "";
+String nothing = null;
+
+if (empty.length() == 0) {
+    System.out.println("String is empty.");
+}
+
+if (nothing == null) {
+    System.out.println("String is null.");
+}
+```
+
+> ✅ `""` means the string exists but has no characters.
+> 🚫 `null` means the variable doesn’t reference any object.
+
+---
+
+## 🧮 5. Useful String Methods
+
+| Method            | Description                       | Example                                       |
+| ----------------- | --------------------------------- | --------------------------------------------- |
+| `length()`        | Returns number of characters      | `"Hello".length()` → `5`                      |
+| `charAt(i)`       | Returns character at position *i* | `"Java".charAt(1)` → `'a'`                    |
+| `substring(a, b)` | Extracts part of a string         | `"Programming".substring(0, 7)` → `"Program"` |
+| `toLowerCase()`   | Converts to lowercase             | `"JAVA".toLowerCase()` → `"java"`             |
+| `toUpperCase()`   | Converts to uppercase             | `"java".toUpperCase()` → `"JAVA"`             |
+| `equals(str)`     | Compares two strings              | `"Hi".equals("hi")` → `false`                 |
+| `trim()`          | Removes spaces at start and end   | `"  Hi  ".trim()` → `"Hi"`                    |
+
+---
+
+## 🧠 6. Key Notes
+
+* Strings in Java are **objects**, not primitive types.
+* Always use `.equals()` for comparing string values.
+* Strings are **immutable** — any modification creates a new string.
+* You can join, slice, and process text easily using built-in methods.
+
+---
+
+## 🧩 Quick Visual
+
+```mermaid
+flowchart TD
+    A["String greeting = 'Hello';"] --> B["Stored in memory as an object"]
+    B --> C["Immutable: cannot change characters"]
+    C --> D["If changed → new String object created"]
+```
+
+---
+
+# 🎯 String Methods in Java
+
+> **Topic:** `length()`, `charAt()`, `substring()`, and other common String methods
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧩 1. Definition
+
+A **String method** is a **built-in function** in Java that allows you to **manipulate**, **analyze**, or **transform** text (Strings).
+Since Strings are **objects**, they come with **predefined methods** that make it easier to handle text operations like measuring length, extracting characters, or converting case.
+
+---
+
+## ⚙️ 2. Purpose / Importance
+
+String methods are important because they:
+
+* Help you **process user input** (like names, passwords, etc.).
+* Make it easier to **search, edit, or format** text.
+* Allow developers to work efficiently with text data without manually looping through characters.
+
+---
+
+## 🧱 3. Syntax / Structure
+
+Here’s the general syntax:
+
+```java
+String variableName = "text";
+variableName.methodName(arguments);
+```
+
+Example:
+
+```java
+String name = "Khiel";
+int length = name.length();
+```
+
+---
+
+## 💡 4. Common String Methods (With Examples)
+
+### 🧮 a. `length()`
+
+**Gets the total number of characters** in a string.
+
+```java
+String word = "Hello";
+System.out.println(word.length()); // Output: 5
+```
+
+---
+
+### 🔠 b. `charAt(int index)`
+
+**Returns a single character** at a given index (starts at 0).
+
+```java
+String word = "Hello";
+System.out.println(word.charAt(1)); // Output: e
+```
+
+---
+
+### ✂️ c. `substring(int beginIndex, int endIndex)`
+
+**Extracts a part of the string** between two indexes.
+
+```java
+String word = "Programming";
+System.out.println(word.substring(0, 6)); // Output: Progra
+```
+
+Or from a starting index until the end:
+
+```java
+System.out.println(word.substring(3)); // Output: gramming
+```
+
+---
+
+### 🔍 d. `indexOf(String str)`
+
+**Finds the position** of a specific character or substring.
+
+```java
+String sentence = "Java is fun";
+System.out.println(sentence.indexOf("is")); // Output: 5
+```
+
+---
+
+### 🔁 e. `toLowerCase()` / `toUpperCase()`
+
+**Converts text to lowercase or uppercase.**
+
+```java
+String name = "Khiel";
+System.out.println(name.toUpperCase()); // Output: KHIEL
+System.out.println(name.toLowerCase()); // Output: khiel
+```
+
+---
+
+### ⚖️ f. `equals(String str)` / `equalsIgnoreCase(String str)`
+
+**Compares two strings** (case-sensitive or not).
+
+```java
+String a = "Hello";
+String b = "hello";
+System.out.println(a.equals(b));           // false
+System.out.println(a.equalsIgnoreCase(b)); // true
+```
+
+---
+
+### 🧩 g. `contains(String str)`
+
+Checks if a substring **exists** within the string.
+
+```java
+String s = "Learning Java";
+System.out.println(s.contains("Java")); // true
+```
+
+---
+
+### 🚫 h. `isEmpty()`
+
+Checks if a string is **empty** (has length 0).
+
+```java
+String s1 = "";
+System.out.println(s1.isEmpty()); // true
+```
+
+---
+
+### 🔄 i. `replace(oldChar, newChar)`
+
+**Replaces** all occurrences of a character or substring.
+
+```java
+String text = "I love Java";
+System.out.println(text.replace("Java", "Python"));
+// Output: I love Python
+```
+
+---
+
+## 🧠 5. Example Code with Explanation
+
+```java
+public class StringMethodsExample {
+    public static void main(String[] args) {
+        String message = "Java Programming";
+
+        System.out.println("Length: " + message.length());
+        System.out.println("Character at index 5: " + message.charAt(5));
+        System.out.println("Substring: " + message.substring(5, 16));
+        System.out.println("Uppercase: " + message.toUpperCase());
+        System.out.println("Contains 'Java'? " + message.contains("Java"));
+    }
+}
+```
+
+### 🧾 Output:
+
+```
+Length: 16
+Character at index 5: P
+Substring: Programming
+Uppercase: JAVA PROGRAMMING
+Contains 'Java'? true
+```
+
+---
+
+## 🧭 6. Summary Table
+
+| Method               | Description             | Example                       | Output |
+| :------------------- | :---------------------- | :---------------------------- | :----- |
+| `length()`           | Counts characters       | `"Hello".length()`            | `5`    |
+| `charAt(0)`          | Gets character at index | `"Hi".charAt(0)`              | `H`    |
+| `substring(2)`       | Extracts from index     | `"World".substring(2)`        | `rld`  |
+| `indexOf("a")`       | Finds position          | `"Java".indexOf("a")`         | `1`    |
+| `toUpperCase()`      | Converts to upper       | `"java".toUpperCase()`        | `JAVA` |
+| `equalsIgnoreCase()` | Compares ignoring case  | `"Hi".equalsIgnoreCase("hi")` | `true` |
+| `replace("a","@")`   | Replaces text           | `"Java".replace("a","@")`     | `J@v@` |
+
+
+---
+
+# 🧩 StringBuilder and StringBuffer in Java
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧠 1. Definition
+
+* **StringBuilder** and **StringBuffer** are **mutable classes** used to create and modify strings efficiently.
+* Unlike the regular `String` class (which is **immutable**), these two allow you to **change the text content** without creating new objects every time.
+
+---
+
+## 🎯 2. Purpose / Importance
+
+* Every time you modify a normal `String`, Java creates a **new object** in memory — which is **slow and wasteful**.
+* **StringBuilder** and **StringBuffer** solve this problem by letting you **append**, **insert**, **delete**, or **replace** characters in the same object.
+* This makes them ideal for **building large strings**, like when processing files, user input, or dynamic text.
+
+---
+
+## 🧱 3. Syntax / Structure
+
+### 🧩 StringBuilder
+
+```java
+StringBuilder sb = new StringBuilder();
+sb.append("Hello");
+sb.append(" World!");
+System.out.println(sb.toString());
+```
+
+### 🧩 StringBuffer
+
+```java
+StringBuffer sbf = new StringBuffer();
+sbf.append("Thread");
+sbf.append(" Safe");
+System.out.println(sbf.toString());
+```
+
+---
+
+## ⚖️ 4. Difference Between StringBuilder and StringBuffer
+
+| Feature           | **StringBuilder**                    | **StringBuffer**              |
+| ----------------- | ------------------------------------ | ----------------------------- |
+| **Introduced In** | Java 5                               | Java 1.0                      |
+| **Thread Safety** | ❌ Not thread-safe (faster)           | ✅ Thread-safe (synchronized)  |
+| **Performance**   | Faster (no synchronization overhead) | Slower (uses synchronization) |
+| **Use Case**      | Single-threaded programs             | Multi-threaded programs       |
+| **API**           | Identical to StringBuffer            | Identical to StringBuilder    |
+
+🧠 *In short:*
+
+* Use **StringBuilder** if only one thread modifies the string.
+* Use **StringBuffer** if multiple threads might access or modify the string at once.
+
+---
+
+## 💡 5. Common Methods
+
+| Method                          | Description                     |
+| ------------------------------- | ------------------------------- |
+| `append(String str)`            | Adds text to the end.           |
+| `insert(int index, String str)` | Inserts text at a position.     |
+| `delete(int start, int end)`    | Removes part of the string.     |
+| `setCharAt(int index, char ch)` | Changes a single character.     |
+| `toString()`                    | Converts to a regular `String`. |
+| `length()`                      | Returns current length.         |
+
+---
+
+## 🧩 6. Example Code with Explanation
+
+```java
+public class StringBuilderExample {
+    public static void main(String[] args) {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Hello");
+        builder.append(" Java!");
+        builder.insert(6, " World");
+        builder.delete(0, 6);
+        System.out.println(builder.toString()); 
+    }
+}
+```
+
+### 📝 Output:
+
+```
+World Java!
+```
+
+### 💬 Explanation:
+
+1. Start with an empty `StringBuilder`.
+2. Add "Hello" and " Java!" → `"Hello Java!"`
+3. Insert `" World"` after "Hello" → `"Hello World Java!"`
+4. Delete `"Hello "` → `"World Java!"`
+
+---
+
+## 🧩 **Methods (Functions) in Java**
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+### 1. Definition
+
+A **method** (also called a **function** in other programming languages) is a **block of code that performs a specific task**.
+It helps you **organize** your program into smaller, reusable parts — making it easier to read and maintain.
+
+In simple terms, a method is like a *mini program inside your main program* that runs only when you call it.
+
+---
+
+### 2. Purpose / Importance
+
+✅ **Reusability** – You can write code once and use it multiple times.
+✅ **Readability** – Code is easier to understand when divided into methods.
+✅ **Debugging** – Smaller code sections are easier to fix or improve.
+✅ **Organization** – Makes your code structured and modular.
+
+---
+
+### 3. Syntax / Structure
+
+```java
+returnType methodName(parameters) {
+    // method body (code to execute)
+}
+```
+
+**Explanation:**
+
+* `returnType` → the data type the method gives back (e.g., `int`, `double`, `String`, or `void` if nothing is returned)
+* `methodName` → the name you give the method
+* `parameters` → values you pass into the method (optional)
+* `method body` → the actual code that runs
+
+---
+
+### 4. Example Code with Explanation
+
+```java
+public class Main {
+    // Method Definition
+    static void greetUser(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+
+    public static void main(String[] args) {
+        // Method Call
+        greetUser("Khiel");
+        greetUser("Java Learner");
+    }
+}
+```
+
+**Explanation:**
+
+1. `static void greetUser(String name)` → defines a method that takes one parameter (`name`) and doesn’t return anything (`void`).
+2. `System.out.println("Hello, " + name + "!");` → prints a personalized greeting.
+3. Inside `main()`, we call the method twice with different arguments.
+
+**Output:**
+
+```
+Hello, Khiel!
+Hello, Java Learner!
+```
+
+---
+
+### 5. Common Mistakes or Tips
+
+⚠️ Forgetting to call the method — defining it won’t execute it automatically.
+⚠️ Using wrong data types for parameters.
+💡 Use **descriptive names** for methods (e.g., `calculateArea`, `printMessage`).
+💡 If the method returns a value, use `return` keyword properly.
+
+Example with return value:
+
+```java
+static int addNumbers(int a, int b) {
+    return a + b;
+}
+```
+
+---
+
+# Method Overloading
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧩 1. Definition
+
+**Method Overloading** means creating **multiple methods with the same name** in a class but with **different parameters** (number, type, or order).
+It allows Java to determine **which method to call** based on the arguments passed when the method is invoked.
+
+---
+
+## 🎯 2. Purpose / Importance
+
+* It makes the code **cleaner and more readable**, because you can use **one method name** for related actions.
+* It helps achieve **compile-time polymorphism**, one of the core OOP principles.
+* It’s useful when a single operation can be done in **different ways** — for example, adding two integers or two doubles.
+
+---
+
+## 🧱 3. Syntax / Structure
+
+```java
+class ClassName {
+    // same method name, different parameters
+    void methodName(int a) { ... }
+    void methodName(double a) { ... }
+    void methodName(int a, int b) { ... }
+}
+```
+
+📘 **Note:** The compiler decides which method to call **based on the argument list**, not the return type.
+
+---
+
+## 💡 4. Example Code with Explanation
+
+```java
+public class OverloadExample {
+
+    // Method 1: adds two integers
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method 2: adds three integers
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Method 3: adds two doubles
+    double add(double a, double b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        OverloadExample obj = new OverloadExample();
+
+        System.out.println("Sum of two ints: " + obj.add(2, 3));
+        System.out.println("Sum of three ints: " + obj.add(2, 3, 4));
+        System.out.println("Sum of two doubles: " + obj.add(2.5, 3.5));
+    }
+}
+```
+
+### 🔍 Explanation:
+
+1. All three methods are named `add()`.
+2. The compiler chooses which `add()` to execute based on the **arguments** passed:
+
+   * `obj.add(2, 3)` → calls `add(int, int)`
+   * `obj.add(2, 3, 4)` → calls `add(int, int, int)`
+   * `obj.add(2.5, 3.5)` → calls `add(double, double)`
+
+This shows how **method overloading** works at **compile-time**.
+
+---
+
+## ⚠️ 5. Common Mistakes or Tips
+
+✅ Parameters must differ in **type, number, or order** — not just return type.
+❌ This will cause an error:
+
+```java
+int add(int a, int b) { ... }
+double add(int a, int b) { ... }  // ❌ Invalid: same parameters, different return type
+```
+
+✅ Overloading can happen even with **different parameter order**:
+
+```java
+void display(int a, String b) { ... }
+void display(String b, int a) { ... }
+```
+
+---
+
+# Scope of Variables
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧩 1. Definition
+
+**Scope of Variables** refers to the **area in a program where a variable is accessible or can be used**.
+In Java, variables only exist within a specific block or region — outside that scope, the program can’t recognize them.
+
+---
+
+## 🎯 2. Purpose / Importance
+
+Understanding variable scope is important because:
+
+* It **prevents naming conflicts** (two variables with the same name in different blocks are fine).
+* It **controls memory usage** (variables are destroyed after going out of scope).
+* It **makes code safer and more organized** by limiting variable access.
+
+---
+
+## 🧱 3. Syntax / Structure
+
+Java has four main types of variable scope:
+
+| Type                  | Declared Inside                    | Accessible From         | Lifetime            |
+| --------------------- | ---------------------------------- | ----------------------- | ------------------- |
+| **Local Variable**    | Method or block                    | Only inside that block  | Until method ends   |
+| **Instance Variable** | Inside class but outside methods   | All instance methods    | While object exists |
+| **Static Variable**   | Inside class with `static` keyword | All objects and methods | Until program ends  |
+| **Loop Variable**     | Inside loop (like `for`)           | Only inside that loop   | Until loop finishes |
+
+---
+
+## 💻 4. Example Code with Explanation
+
+```java
+public class ScopeExample {
+
+    int instanceVar = 10;     // Instance Variable
+    static int staticVar = 20; // Static Variable
+
+    public void showScope() {
+        int localVar = 30; // Local Variable
+
+        System.out.println("Instance Variable: " + instanceVar);
+        System.out.println("Static Variable: " + staticVar);
+        System.out.println("Local Variable: " + localVar);
+
+        for (int i = 0; i < 3; i++) { // Loop Variable
+            System.out.println("Loop Variable i: " + i);
+        }
+
+        // System.out.println(i); // ❌ Error! i is out of scope here
+    }
+
+    public static void main(String[] args) {
+        ScopeExample example = new ScopeExample();
+        example.showScope();
+    }
+}
+```
+
+### 🔍 Explanation
+
+* `instanceVar` → can be accessed by any **object** of the class.
+* `staticVar` → belongs to the **class**, not the object.
+* `localVar` → exists only while inside the `showScope()` method.
+* `i` → only exists **inside the loop**.
+
+---
+
+## ⚠️ 5. Common Mistakes or Tips
+
+❌ Using a variable **outside its scope** (will cause *“cannot find symbol”* error).
+❌ Declaring multiple variables with the **same name in the same block**.
+💡 Prefer **short, limited scopes** — it makes code easier to debug and maintain.
+💡 Use `this.variableName` to distinguish between local and instance variables when they share the same name.
+
+---
+
+# Static and Non-Static Methods
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+### 🧩 1. Definition
+
+In Java, **methods** are blocks of code that perform specific tasks.
+They can be **static** or **non-static** depending on how they are used and called.
+
+* **Static Methods** belong to the **class** itself, not to any object.
+  → You can call them without creating an object.
+* **Non-Static Methods** (also called *instance methods*) belong to an **object** of the class.
+  → You must create an object first before you can use them.
+
+---
+
+### 🎯 2. Purpose / Importance
+
+✅ **Static methods** are useful for actions that are *independent of object data*, such as math operations or utility functions.
+✅ **Non-static methods** are important when the action depends on *specific object data* or instance variables.
+
+In short:
+
+* Use **static** for shared behavior (common for all objects).
+* Use **non-static** for behavior that depends on object state.
+
+---
+
+### ⚙️ 3. Syntax / Structure
+
+**Static Method Syntax**
+
+```java
+class Example {
+    static void displayStatic() {
+        System.out.println("This is a static method.");
+    }
+}
+```
+
+**Non-Static Method Syntax**
+
+```java
+class Example {
+    void displayNonStatic() {
+        System.out.println("This is a non-static method.");
+    }
+}
+```
+
+---
+
+### 💻 4. Example Code with Explanation
+
+```java
+public class MethodExample {
+
+    // Static method
+    static void greetStatic() {
+        System.out.println("Hello from static method!");
+    }
+
+    // Non-static method
+    void greetNonStatic() {
+        System.out.println("Hello from non-static method!");
+    }
+
+    public static void main(String[] args) {
+
+        // Calling static method directly (no object needed)
+        greetStatic();
+
+        // Creating object to call non-static method
+        MethodExample obj = new MethodExample();
+        obj.greetNonStatic();
+    }
+}
+```
+
+**Explanation:**
+1️⃣ `greetStatic()` — called directly because it’s static.
+2️⃣ `greetNonStatic()` — requires `obj` (an instance of the class).
+3️⃣ Inside `main`, we first call the static method, then create an object to access the non-static one.
+
+---
+
+### ⚠️ 5. Common Mistakes or Tips
+
+🚫 **Error:** Calling a non-static method without an object.
+
+```java
+greetNonStatic(); // ❌ This will cause an error
+```
+
+✅ **Fix:**
+
+```java
+MethodExample obj = new MethodExample();
+obj.greetNonStatic(); // ✅ Correct
+```
+
+💡 **Tip:**
+
+* Static methods **cannot access non-static variables or methods** directly because they belong to the class, not to any specific object.
+* But non-static methods **can access static methods**.
+
+---
+
+# Recursion
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧩 1. Definition
+
+**Recursion** is a programming technique where a **method calls itself** to solve a problem.
+Each recursive call breaks the problem into **smaller subproblems**, until it reaches a **base case** — a condition that stops further calls.
+
+> In short: recursion is when a function keeps calling itself until it’s done.
+
+---
+
+## 🎯 2. Purpose / Importance
+
+Recursion is important because it helps:
+
+* Solve problems that are **naturally repetitive or hierarchical**, such as factorials, Fibonacci numbers, file directories, or tree traversals.
+* **Simplify code** — instead of loops or manual repetition, recursion expresses the solution elegantly.
+* Train your logical thinking about **divide and conquer** problems.
+
+---
+
+## ⚙️ 3. Syntax / Structure
+
+```java
+returnType methodName(parameters) {
+    if (baseCondition) {
+        // Stop calling itself
+        return someValue;
+    } else {
+        // Recursive call (method calls itself)
+        return methodName(modifiedParameter);
+    }
+}
+```
+
+### Example structure:
+
+```java
+int factorial(int n) {
+    if (n == 1) // base case
+        return 1;
+    else
+        return n * factorial(n - 1); // recursive case
+}
+```
+
+---
+
+## 💡 4. Example Code with Explanation
+
+```java
+public class RecursionExample {
+
+    // Method to find factorial using recursion
+    static int factorial(int n) {
+        if (n == 1) {                 // Base Case
+            return 1;
+        } else {
+            return n * factorial(n - 1); // Recursive Call
+        }
+    }
+
+    public static void main(String[] args) {
+        int num = 5;
+        int result = factorial(num);
+        System.out.println("Factorial of " + num + " = " + result);
+    }
+}
+```
+
+### 🧠 Line-by-line Explanation:
+
+1. `static int factorial(int n)` — defines a recursive method that calculates the factorial of a number.
+2. `if (n == 1)` — base case: stops recursion when `n` reaches 1.
+3. `return n * factorial(n - 1);` — multiplies `n` by the factorial of the smaller number (`n - 1`).
+4. Calls keep stacking until `n == 1`, then values return step-by-step like:
+
+   ```
+   factorial(5) = 5 * factorial(4)
+   factorial(4) = 4 * factorial(3)
+   factorial(3) = 3 * factorial(2)
+   factorial(2) = 2 * factorial(1)
+   factorial(1) = 1  ← base case reached
+   ```
+
+   Then results combine: `5 * 4 * 3 * 2 * 1 = 120`
+
+---
+
+## ⚠️ 5. Common Mistakes or Tips
+
+❌ **No base case** → infinite recursion → `StackOverflowError`
+❌ **Wrong base condition** → incorrect result or never stops
+💡 **Tip:** Always check that each recursive call moves closer to the base case.
+💡 **Tip:** Use recursion for problems that are recursive in nature — not just loops in disguise.
+
+---
+
+## 🧠 6. Mini Practice Task
+
+🧩 **Challenge:**
+Write a recursive method named `sumOfNumbers(int n)` that returns the sum of all numbers from `1` to `n`.
+
+**Example Output:**
+
+```
+Input: 5
+Output: 15  (1 + 2 + 3 + 4 + 5)
+```
+
+---
+
+# 🎲 Random Numbers in Java
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Beginner--Friendly-green)
+
+---
+
+## 🧩 1. Definition
+
+**Random numbers** are values generated by the computer that **appear to be unpredictable**.
+In Java, you can create random numbers using different tools such as:
+
+* `java.util.Random` class
+* `Math.random()` method
+* `java.util.concurrent.ThreadLocalRandom` class
+* `java.security.SecureRandom` (for cryptographic uses)
+
+---
+
+## 💡 2. Purpose / Importance
+
+Random numbers are important for:
+
+* **Simulations** (e.g., dice rolls, traffic flow, weather patterns)
+* **Games** (e.g., random enemy spawn or loot)
+* **Testing** (e.g., generating random test data)
+* **Security** (e.g., creating random passwords or encryption keys)
+
+---
+
+## 🧱 3. Syntax / Structure
+
+### ✅ Using `Math.random()`
+
+```java
+double randomValue = Math.random(); // Generates 0.0 ≤ value < 1.0
+```
+
+### ✅ Using `Random` class
+
+```java
+import java.util.Random;
+
+Random rand = new Random();
+int randomInt = rand.nextInt(10); // 0 to 9
+```
+
+### ✅ Using `ThreadLocalRandom`
+
+```java
+import java.util.concurrent.ThreadLocalRandom;
+
+int randomNum = ThreadLocalRandom.current().nextInt(1, 101); // 1 to 100
+```
+
+---
+
+## 💻 4. Example Code with Explanation
+
+```java
+import java.util.Random;
+
+public class RandomExample {
+    public static void main(String[] args) {
+        Random random = new Random();
+
+        int num1 = random.nextInt(10);        // Random integer 0–9
+        double num2 = random.nextDouble();    // Random double 0.0–1.0
+        boolean flag = random.nextBoolean();  // Random true or false
+
+        System.out.println("Random Integer: " + num1);
+        System.out.println("Random Double: " + num2);
+        System.out.println("Random Boolean: " + flag);
+    }
+}
+```
+
+**Explanation:**
+
+* `nextInt(10)` → Generates integer from 0 up to (but not including) 10
+* `nextDouble()` → Generates a decimal number between 0.0 and 1.0
+* `nextBoolean()` → Randomly gives either `true` or `false`
+
+---
+
+## ⚠️ 5. Common Mistakes or Tips
+
+🚫 **Mistake:** Creating multiple `Random` objects inside a loop (it can repeat values).
+✅ **Fix:** Create **one instance** and reuse it.
+
+🚫 **Mistake:** Assuming `Math.random()` gives integers.
+✅ **Fix:** Multiply and cast:
+
+```java
+int value = (int)(Math.random() * 10); // 0–9
+```
+
+💡 **Tip:** Use `ThreadLocalRandom` in multi-threaded programs for better performance.
+
+---
+
+## 🧠 6. Mini Practice Task
+
+✏️ **Challenge:**
+Write a program that simulates rolling two dice (each from 1 to 6) and prints their total.
+
+🧩 **Expected Output Example:**
+
+```
+Dice 1: 3
+Dice 2: 5
+Total: 8
+```
+
+---
+
+## 🧮 Basic Math Class Functions
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Intermediate--Friendly-orange)
+
+---
+
+### 1. Definition
+
+**Math Class** in Java is a built-in utility class found in the `java.lang` package that provides **mathematical operations and constants**.
+It allows you to easily perform calculations like square roots, powers, rounding, trigonometry, and more — without having to write your own formulas.
+
+---
+
+### 2. Purpose / Importance
+
+The **Math class** helps programmers:
+
+* Avoid writing complex mathematical formulas manually.
+* Perform **accurate** and **efficient** calculations.
+* Access **predefined constants** like `PI` and `E`.
+* Simplify tasks like random number generation, rounding decimals, and comparing values.
+
+It’s widely used in areas such as **geometry, physics simulations, statistics, and game development**.
+
+---
+
+### 3. Syntax / Structure
+
+Math class functions are **static**, which means you can use them **without creating an object**.
+
+```java
+Math.functionName(arguments);
+```
+
+Example functions:
+
+```java
+Math.sqrt(25);    // square root
+Math.pow(2, 3);   // power (2³)
+Math.abs(-7);     // absolute value
+Math.max(10, 20); // returns the larger value
+Math.min(10, 20); // returns the smaller value
+Math.round(4.6);  // rounds to nearest integer
+Math.random();    // returns a random number between 0.0 and 1.0
+```
+
+---
+
+### 4. Example Code with Explanation
+
+```java
+public class MathExample {
+    public static void main(String[] args) {
+        double a = 25;
+        double b = 3;
+
+        System.out.println("Square Root of 25: " + Math.sqrt(a));
+        System.out.println("2 raised to power 3: " + Math.pow(2, b));
+        System.out.println("Absolute value of -10: " + Math.abs(-10));
+        System.out.println("Maximum of 8 and 15: " + Math.max(8, 15));
+        System.out.println("Random number: " + Math.random());
+    }
+}
+```
+
+**Explanation:**
+
+* `Math.sqrt(a)` → returns 5.0 (square root of 25).
+* `Math.pow(2, b)` → returns 8.0 (2³).
+* `Math.abs(-10)` → converts negative to positive → 10.
+* `Math.max(8, 15)` → returns 15.
+* `Math.random()` → generates a random decimal between 0.0 and 1.0.
+
+---
+
+### 5. Common Mistakes or Tips
+
+⚠️ **Common Mistakes:**
+
+* Forgetting that `Math.random()` returns **double** between 0 and 1, not an integer.
+* Using `Math.pow()` with integers and expecting integer results (it returns `double`).
+* Confusing `Math.round()` with `Math.floor()` or `Math.ceil()`:
+
+  * `Math.round(4.6)` → 5
+  * `Math.floor(4.6)` → 4
+  * `Math.ceil(4.1)` → 5
+
+💡 **Tips:**
+
+* To get a random integer, multiply and cast:
+
+  ```java
+  int rand = (int)(Math.random() * 10); // random int 0–9
+  ```
+* Use `Math.PI` for π (3.1415926...) and `Math.E` for Euler’s number (2.718...).
+
+---
+
+### 6. Mini Practice Task
+
+🧩 **Challenge:**
+Write a program that:
+
+* Asks the user for a radius of a circle.
+* Computes the **area** and **circumference** using the `Math` class.
+
+**Formula hints:**
+
+* Area = π × r² → `Math.PI * Math.pow(r, 2)`
+* Circumference = 2 × π × r → `2 * Math.PI * r`
+
+---
+
+# 📝 Comments and Documentation in Java
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Intermediate--Friendly-orange)
+
+---
+
+### **1. Definition**
+
+**Comments** in Java are lines of text in your code that are ignored by the compiler. They are used to describe what the code does, making it easier for humans to understand.
+
+**Documentation comments**, on the other hand, are special comments used to automatically generate documentation (via tools like **Javadoc**).
+
+---
+
+### **2. Purpose / Importance**
+
+✅ Helps **explain logic** behind code.
+✅ Makes your code **readable and maintainable** for others (and for your future self).
+✅ Useful for **debugging and collaboration**.
+✅ Javadoc comments help create **official project documentation** directly from code.
+
+---
+
+### **3. Syntax / Structure**
+
+There are **three main types** of comments in Java:
+
+| Type                  | Syntax           | Description                             |
+| --------------------- | ---------------- | --------------------------------------- |
+| Single-line comment   | `// comment`     | Used for short explanations.            |
+| Multi-line comment    | `/* comment */`  | Used for longer notes or code blocks.   |
+| Documentation comment | `/** comment */` | Used to generate Javadoc documentation. |
+
+**Example syntax:**
+
+```java
+// This is a single-line comment
+
+/* This is a 
+   multi-line comment */
+
+/**
+ * This is a documentation comment
+ * It describes a class or method for Javadoc
+ */
+```
+
+---
+
+### **4. Example Code with Explanation**
+
+```java
+/**
+ * The Calculator class performs basic math operations.
+ */
+public class Calculator {
+
+    // Adds two numbers
+    public int add(int a, int b) {
+        return a + b; // returns the sum
+    }
+
+    /**
+     * Subtracts one number from another.
+     * @param a the first number
+     * @param b the number to subtract
+     * @return the result of subtraction
+     */
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+```
+
+**Explanation:**
+
+* `// Adds two numbers` → single-line comment explaining a method.
+* `/** ... */` → Javadoc comment that documents the method for tools like `javadoc`.
+* `@param` and `@return` are **Javadoc tags** describing parameters and return values.
+
+To generate documentation, use:
+
+```bash
+javadoc Calculator.java
+```
+
+This creates HTML files describing your classes and methods automatically.
+
+---
+
+### **5. Common Mistakes or Tips**
+
+❌ Writing comments that **just repeat the code** (e.g., `// adds a + b` for `a + b`).
+✅ Instead, explain **why** the code exists or what it’s supposed to achieve.
+✅ Keep documentation **updated** when the code changes.
+✅ Use **Javadoc comments** for public classes and methods only.
+✅ Use clear and consistent formatting.
+
+---
+
+# Using Packages (import)
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Intermediate--Friendly-orange)
+
+---
+
+## 1. Definition
+
+In Java, a **package** is a way to **organize related classes, interfaces, and sub-packages** into a single group.
+Think of it like a folder system on your computer — it keeps your code organized and prevents conflicts between class names.
+
+The **`import` statement** allows you to use classes from other packages in your program.
+
+---
+
+## 2. Purpose / Importance
+
+* ✅ **Organization** – Packages help you manage large programs by grouping similar classes together (e.g., `java.util`, `java.io`).
+* ✅ **Avoids Name Conflicts** – Two classes can have the same name as long as they’re in different packages.
+* ✅ **Reusability** – You can easily reuse existing Java classes and libraries by importing them.
+* ✅ **Better Maintenance** – Easier to find, debug, and update specific parts of your project.
+
+---
+
+## 3. Syntax / Structure
+
+### Declaring a Package
+
+```java
+package packageName;
+```
+
+### Importing a Package
+
+```java
+import packageName.ClassName;      // Imports a specific class
+import packageName.*;              // Imports all classes in the package
+```
+
+### Example Structure
+
+```
+project/
+ ├── Main.java
+ └── mypackage/
+      └── Helper.java
+```
+
+---
+
+## 4. Example Code with Explanation
+
+### 📁 `mypackage/Helper.java`
+
+```java
+package mypackage;  // Declares that this class belongs to the package 'mypackage'
+
+public class Helper {
+    public void greet() {
+        System.out.println("Hello from Helper class!");
+    }
+}
+```
+
+### 📁 `Main.java`
+
+```java
+import mypackage.Helper;  // Import the Helper class from 'mypackage'
+
+public class Main {
+    public static void main(String[] args) {
+        Helper h = new Helper();  // Create an object from imported class
+        h.greet();                // Call its method
+    }
+}
+```
+
+### 🧠 Explanation
+
+1. `package mypackage;` – places the `Helper` class in a folder called `mypackage`.
+2. `import mypackage.Helper;` – tells Java to use the `Helper` class from that package.
+3. `Helper h = new Helper();` – creates an instance of the class.
+4. The output will be:
+
+   ```
+   Hello from Helper class!
+   ```
+
+---
+
+## 5. Common Mistakes or Tips
+
+❌ Forgetting to match the **folder name** with the **package name** (they must be the same).
+❌ Forgetting to **compile with proper folder structure**:
+
+```bash
+javac mypackage/Helper.java Main.java
+```
+
+💡 Tip: Use `import java.util.*;` when using classes like `Scanner`, `ArrayList`, etc.
+💡 Tip: Avoid using `*` in professional code — import only what you need for clarity.
+
+---
+
+## 6. Mini Practice Task
+
+✅ **Challenge:**
+Create a package named `tools` that contains a class `Calculator` with a method `add(int a, int b)` that returns the sum.
+Then, in your `Main` class, import and use that `Calculator` to print the result of `add(10, 5)`.
+
+
+---
+
+# ⚠️ Basic Exception Handling (try-catch)
+
+![java-badge](https://img.shields.io/badge/Language-Java-red) ![level-badge](https://img.shields.io/badge/Level-Intermediate--Friendly-orange)
+
+---
+
+## 1. **Definition**
+
+An **exception** is an **unexpected error** that occurs while a program is running — like dividing by zero, accessing a missing file, or using a `null` variable.
+
+The **`try-catch` block** is used to **handle these exceptions gracefully**, so the program doesn’t crash and can recover or show a friendly message instead.
+
+---
+
+## 2. **Purpose / Importance**
+
+Exception handling is important because it:
+
+* Prevents the program from **stopping suddenly**.
+* Helps developers **find and fix issues easily**.
+* Makes programs more **reliable** and **user-friendly**.
+* Allows you to **control what happens** when an error occurs.
+
+---
+
+## 3. **Syntax / Structure**
+
+```java
+try {
+    // Code that might cause an exception
+} catch (ExceptionType e) {
+    // Code to handle the exception
+}
+```
+
+You can also add an optional **`finally` block**:
+
+```java
+try {
+    // risky code
+} catch (Exception e) {
+    // handle error
+} finally {
+    // code that always runs (e.g., close files)
+}
+```
+
+---
+
+## 4. **Example Code with Explanation**
+
+```java
+public class TryCatchExample {
+    public static void main(String[] args) {
+        try {
+            int number = 10 / 0;  // ❌ Error: divide by zero
+            System.out.println("Result: " + number);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: You can't divide by zero!");
+        }
+        System.out.println("Program continues...");
+    }
+}
+```
+
+### 🧠 Explanation:
+
+1. The code inside `try` attempts to divide 10 by 0 → causes an `ArithmeticException`.
+2. Java jumps to the `catch` block and executes the message.
+3. The program doesn’t crash — it prints “Program continues...” after handling the error.
+
+**Output:**
+
+```
+Error: You can't divide by zero!
+Program continues...
+```
+
+---
+
+## 5. **Common Mistakes or Tips**
+
+🚫 **Mistakes:**
+
+* Using a **generic `Exception`** for all errors (bad for debugging).
+* Placing **safe code inside try** blocks unnecessarily.
+* Forgetting to **handle specific exceptions** like `IOException`, `NullPointerException`, etc.
+
+💡 **Tips:**
+
+* Catch **specific exceptions first**.
+* Use `finally` for cleanup (like closing files or releasing memory).
+* Don’t ignore exceptions — always log or explain them.
+
+---
+
+## 6. **Mini Practice Task**
+
+🧠 **Challenge:**
+Fix this program so it doesn’t crash when the user enters text instead of a number.
+
+```java
+import java.util.Scanner;
+
+public class PracticeTryCatch {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt(); // may cause InputMismatchException
+        System.out.println("You entered: " + num);
+    }
+}
+```
+
+👉 **Hint:** Wrap the input code in a `try-catch` block to handle invalid input.
+
+---
 
 
 
