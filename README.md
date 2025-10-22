@@ -25,21 +25,21 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 - Constants and Literals ✔️
 
-- Input and Output (Scanner class) 
+- Input and Output (Scanner class) ✔️
 
-- Operators (Arithmetic, Relational, Logical, Assignment)
+- Operators (Arithmetic, Relational, Logical, Assignment) ✔️
 
-- Type Casting
+- Type Casting ✔️
 
-- If–Else Statements
+- If–Else Statements ✔️
 
-- Nested If–Else
+- Nested If–Else ✔️
 
-- Switch Statement
+- Switch Statement ✔️
 
-- Loops (for, while, do-while)
+- Loops (for, while, do-while) ✔️
 
-- Break and Continue
+- Break and Continue  ✔️
 
 - Arrays (1D)
 
