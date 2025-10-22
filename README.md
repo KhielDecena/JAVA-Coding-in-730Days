@@ -15,17 +15,17 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 ### 📘Topics
 
-- Introduction to Java
+- Introduction to Java ✔️
 
-- Java Installation and Setup (JDK, JRE, IDE)
+- Java Installation and Setup (JDK, JRE, IDE) ✔️
 
-- Java Syntax and Structure
+- Java Syntax and Structure ✔️
 
-- Variables and Data Types
+- Variables and Data Types ✔️
 
-- Constants and Literals
+- Constants and Literals ✔️
 
-- Input and Output (Scanner class)
+- Input and Output (Scanner class) 
 
 - Operators (Arithmetic, Relational, Logical, Assignment)
 
