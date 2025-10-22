@@ -9,7 +9,7 @@ Each topic is organized into three levels for easier progression:
 
 ---
 
-## 🟢 BEGINNER LEVEL (1–30)
+## 🟢 BEGINNER LEVEL (1–30) 📅122 DAYS
 
 Start with the fundamentals — from installation, syntax, and variables to arrays, loops, and basic exception handling. Perfect for those new to Java programming.
 
@@ -77,7 +77,7 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 ---
 
-## 🟡 INTERMEDIATE LEVEL (31–65)
+## 🟡 INTERMEDIATE LEVEL (31–65) 📅 244DAYS
 ### 📘Topics
 - Object-Oriented Programming (OOP) Concepts
 
@@ -153,7 +153,7 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 --
 
-## 🔵 ADVANCED LEVEL (66–100)
+## 🔵 ADVANCED LEVEL (66–100) 📅 366DAYS
 
 Explore powerful Java features such as **Lambda expressions, Stream API, Multithreading, JDBC, GUI (Swing/JavaFX)**, and design patterns. These topics prepare you for real-world Java applications and coding interviews.
 
