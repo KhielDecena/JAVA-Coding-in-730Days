@@ -41,15 +41,15 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 - Break and Continue  ✔️
 
-- Arrays (1D)
+- Arrays (1D) ✔️
 
-- Arrays (2D)
+- Arrays (2D) ✔️
 
-- String Basics
+- String Basics ✔️
 
-- String Methods (length, charAt, substring, etc.)
+- String Methods (length, charAt, substring, etc.) ✔️
 
-- StringBuilder and StringBuffer
+- StringBuilder and StringBuffer 
 
 - Methods (Functions)
 
@@ -61,7 +61,7 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 - Recursion
 
-- Random Numbers in Java
+- Random Numbers in Java 
 
 - Basic Math Class Functions
 
