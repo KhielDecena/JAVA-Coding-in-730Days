@@ -49,31 +49,31 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 - String Methods (length, charAt, substring, etc.) ✔️
 
-- StringBuilder and StringBuffer 
+- StringBuilder and StringBuffer ✔️
 
-- Methods (Functions)
+- Methods (Functions) ✔️
 
-- Method Overloading
+- Method Overloading ✔️
 
-- Scope of Variables
+- Scope of Variables ✔️
 
-- Static and Non-Static Methods
+- Static and Non-Static Methods ✔️
 
-- Recursion
+- Recursion ✔️
 
-- Random Numbers in Java 
+- Random Numbers in Java ✔️
 
-- Basic Math Class Functions
+- Basic Math Class Functions ✔️
 
-- Comments and Documentation
+- Comments and Documentation ✔️
 
-- Using Packages (import)
+- Using Packages (import)  ✔️
 
-- Simple Programs (sum, factorial, palindrome, etc.)
+- Simple Programs (sum, factorial, palindrome, etc.) ✔️
 
-- Debugging Basics
+- Debugging Basics ✔️
 
-- Basic Exception (try-catch)
+- Basic Exception (try-catch) ✔️
 
 ---
 
