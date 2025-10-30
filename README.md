@@ -79,17 +79,18 @@ Start with the fundamentals — from installation, syntax, and variables to arra
 
 ## 🟡 INTERMEDIATE LEVEL (31–65) 
 ### 📘Topics
-- Object-Oriented Programming (OOP) Concepts
 
-- Classes and Objects
+- Object-Oriented Programming (OOP) Concepts ✔️ 
 
-- Constructors
+- Classes and Objects ✔️
 
-- Constructor Overloading
+- Constructors ✔️ 
 
-- this Keyword
+- Constructor Overloading ✔️
 
-- Instance vs. Class Variables
+- this Keyword  ✔️
+ 
+- Instance vs. Class Variables 
 
 - Encapsulation (Getters and Setters)
 
